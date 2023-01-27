@@ -107,6 +107,9 @@ function ubah($data) {
         $gambar = $gambarLama;
     } else {
     $gambar = upload();
+        if(!$gambar) {
+            return false;
+        }
     }
     
     
